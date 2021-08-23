@@ -125,12 +125,13 @@ And... If everything matches, your private key will be returned to you to recove
 ![alt text](https://github.com/ivanmmurciaua/store-pk-with-user-and-password/blob/main/images/tutorial/pk_3.jpg?raw=true)
 
 
-**The end**
 
 ## Possible improvements:
 
 - Change Username
 - Change Password
 - Change Private Key
+
+
 
 **Happy _buidling_!**
