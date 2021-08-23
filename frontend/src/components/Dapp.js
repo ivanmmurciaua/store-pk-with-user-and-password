@@ -1,9 +1,11 @@
 // JSON's & JS's 
 import React, { Component } from "react";
+import CryptoJS from 'crypto-js';
+
+// Web3
 import SimpleStorageContract from "../contracts/SimpleStorage.json";
 import contractAddress from "../contracts/contract-address.json";
 import getWeb3 from "./getWeb3";
-import CryptoJS from 'crypto-js';
 
 // CSS
 import "./css/Dapp.css";
@@ -150,7 +152,7 @@ class Dapp extends Component {
       <div className="Dapp">
         <h1>Store It!</h1>
         <form onSubmit={this.storeData}>
-          <label>Usuario</label>
+          <label>Username</label>
           <br />
           <input type="text" value={this.state.user} onChange={this.handleChangeUser}></input>
           <br />
@@ -160,7 +162,7 @@ class Dapp extends Component {
           <br />
           <label>Password</label>
           <br />
-          <input type="text" value={this.state.pass} onChange={this.handleChangePassword}></input>
+          <input type="password" value={this.state.pass} onChange={this.handleChangePassword}></input>
           <br />
           <label>Password Hashed</label>
           <br />

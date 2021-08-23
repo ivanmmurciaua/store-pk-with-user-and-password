@@ -11,7 +11,7 @@ pragma solidity >=0.8.0;
  */
 contract SimpleStorage {
     
-    /**
+    /*
      * @dev This struct is for store password and PK both encrypted
      */
     struct SecureBox{
@@ -22,13 +22,13 @@ contract SimpleStorage {
         string AES;
     }
     
-    /**
+    /*
      * @dev Mapping to store @user and his SecureBox
      * e.g. @Mike123 => { 46e...4a5, U2F...pPi }
      */
     mapping (string => SecureBox) user_pass;
     
-    /**
+    /*
      * @dev     This function stores in user_pass mappping, user and his SecureBox
      *          after checking if it is not already registered
      *
@@ -45,7 +45,7 @@ contract SimpleStorage {
         sb.SHA = _password; sb.AES = _encrypted_pk;
     }
     
-    /**
+    /*
      * @dev     This function returns SHA512-password hashed stored 
      *          given username after checking if it is already registered
      *
@@ -60,7 +60,7 @@ contract SimpleStorage {
         return sb.SHA;
     }
 
-    /**
+    /*
      * @dev     This function returns SHA512-password hashed given username
      *          after checking if it is already registered & the password is correct
      *
@@ -77,7 +77,7 @@ contract SimpleStorage {
         return sb.AES;
     }
 
-    /**
+    /*
      * @dev     IN REVISION - Returns SecureBox given a user
      *
      * @param   _user is the username to check
