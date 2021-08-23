@@ -2,6 +2,9 @@
 
 This repository contains a project that you can use as to store your private key in blockchain using a username and password system.
 
+## Diagram
+![alt text](https://github.com/ivanmmurciaua/store-pk-with-user-and-password/blob/main/images/diagram.png?raw=true)
+
 ## Quick start
 
 The first things you need to do are cloning this repository and installing its
